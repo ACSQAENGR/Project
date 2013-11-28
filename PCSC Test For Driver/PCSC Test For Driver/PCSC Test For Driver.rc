@@ -1,0 +1,215 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\PCSCTestForDriver.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PCSC.ico"
+IDI_ICON1               ICON                    "48x48XP.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PCSCTESTFORDRIVER_DIALOG DIALOGEX 0, 0, 575, 165
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PCSC Test For Driver"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CB_READERLIST,14,32,254,127,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "List Readers",IDC_BTN_LISTREADERS,281,32,102,14
+    PUSHBUTTON      "Establish Context",IDC_BTN_ESTBLISH_CONTEXT,281,15,102,14
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,281,49,102,14
+    PUSHBUTTON      "Begin Transaction",IDC_BTN_BEGIN_TRANSACTION,281,66,102,14
+    PUSHBUTTON      "Transmit",IDC_BTN_TRANSMIT,281,83,102,14
+    PUSHBUTTON      "End Transaction",IDC_BTN_END_TRANSACTION,281,100,102,14
+    PUSHBUTTON      "Disconnect",IDC_BTN_DISCONNECT,281,117,102,14
+    PUSHBUTTON      "Release Context",IDC_BTN_RELEASE_CONTEXT,281,134,102,14
+    EDITTEXT        IDC_TXT_APDU,15,58,252,31,ES_MULTILINE | ES_UPPERCASE | WS_VSCROLL
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,387,17,16,10
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,387,34,16,10
+    CONTROL         "",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,387,51,16,10
+    CONTROL         "",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,387,68,16,10
+    CONTROL         "",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,387,85,16,10
+    CONTROL         "",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,387,102,16,10
+    CONTROL         "",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,387,119,16,10
+    CONTROL         "",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,387,136,16,10
+    EDITTEXT        IDC_TXT_LOG,407,7,161,151,ES_MULTILINE | WS_VSCROLL
+    PUSHBUTTON      "Execute Connect to Disconnect",IDC_BTN_ONECLICK,16,132,119,14
+    GROUPBOX        "APDU",IDC_STATIC,7,48,264,45
+    GROUPBOX        "Connected Readers",IDC_STATIC,7,21,264,27
+    COMBOBOX        IDC_CB_END_DISPOSITION,128,109,138,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "End Transaction/Disconnect Disposition",IDC_STATIC,113,98,158,28
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Advanced Card Systems Technologies Ltd."
+            VALUE "FileDescription", "Runs basic PCSC Commands"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "PCSC Test For Driver.exe"
+            VALUE "LegalCopyright", "(c) Advanced Card Systems Technologies Ltd.  All rights reserved."
+            VALUE "OriginalFilename", "PCSC Test For Driver.exe"
+            VALUE "ProductName", "PCSC Test Tool For Driver"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PCSCTESTFORDRIVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 568
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PCSCTESTFORDRIVER_DIALOG DLGINIT
+BEGIN
+    IDC_CB_END_DISPOSITION, 0x403, 17, 0
+0x4353, 0x5241, 0x5f44, 0x454c, 0x5641, 0x5f45, 0x4143, 0x4452, "\000" 
+    IDC_CB_END_DISPOSITION, 0x403, 17, 0
+0x4353, 0x5241, 0x5f44, 0x4a45, 0x4345, 0x5f54, 0x4143, 0x4452, "\000" 
+    IDC_CB_END_DISPOSITION, 0x403, 17, 0
+0x4353, 0x5241, 0x5f44, 0x4552, 0x4553, 0x5f54, 0x4143, 0x4452, "\000" 
+    IDC_CB_END_DISPOSITION, 0x403, 19, 0
+0x4353, 0x5241, 0x5f44, 0x4e55, 0x4f50, 0x4557, 0x5f52, 0x4143, 0x4452, 
+"\000" 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\PCSCTestForDriver.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
