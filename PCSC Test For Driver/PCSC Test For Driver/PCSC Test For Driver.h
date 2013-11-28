@@ -9,7 +9,7 @@
 
 #include "resource.h"		// main symbols
 
-
+// This for Testing *******
 // CPCSCTestForDriverApp:
 // See PCSC Test For Driver.cpp for the implementation of this class
 //
